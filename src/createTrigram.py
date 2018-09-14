@@ -16,7 +16,7 @@ with open("./trigram/trigram.lex", "a") as myfile:
             start = time.time()
             array = common.openFile(path + trainFile)
             size = len(array)
-            array = common.partDataToSentences2(array[size*idx:size*(idx+1)])
+            array = common.partDataToSentences(array[size * idx:size * (idx + 1)])
             print "part1",time.time() - start
 
             start = time.time()

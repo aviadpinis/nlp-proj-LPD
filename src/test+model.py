@@ -27,7 +27,7 @@ dictmodel = dict([row.split('\t') for row in model])
 
 testLpd = common.openFile(pathLPD)
 dataTestLPD = [row.split('\t')[0] for row in testLpd]
-testSens = common.partDataToSentences2(dataTestLPD)
+testSens = common.partDataToSentences(dataTestLPD)
 
 testAnswer = []
 for row in testLpd:
@@ -36,7 +36,7 @@ for row in testLpd:
     else:
         testAnswer.append(row.split('\t')[1])
 
-testAnswerSen = common.partDataToSentences2(testAnswer)
+testAnswerSen = common.partDataToSentences(testAnswer)
 
 def smoodUnkFunc(vocDict, limitForSmood):
     keys = vocDict.keys()

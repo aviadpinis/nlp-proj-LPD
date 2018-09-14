@@ -1,3 +1,6 @@
+# This baseline is very simple,
+# For each word in the sentence, i check if she has LPD
+# If it has i choose a random word from the options
 
 # coding: utf-8
 
@@ -9,32 +12,15 @@ from numpy import unique
 import random
 import nltk
 
-# const
-pathVocabulary = "./vocabulary.lex"
-pathLPD = "./dataWithLPD.gold"
+vocDict = common.getVocabulary()
+testSens, answerSens = common.getTestAndAnswerSentences()
 
-# vocabulary for check if word is exists
-voc = common.openFile(pathVocabulary)
-vocDict = dict([row.split('\t') for row in voc])
+# I choose a random word from the options
+def randomWord(wordsPossible):
+    indexForWordChoice = random.randint(0, len(wordsPossible) - 1)
+    return wordsPossible[indexForWordChoice]
 
-#
-testLpd = common.openFile(pathLPD)
-dataTestLPD = np.array([row.split('\t')[0] for row in testLpd])
-testSens = np.array(common.partDataToSentences2(dataTestLPD))
-
-def randomWord(wordPossible):
-    indexForWordChoice = random.randint(0,len(wordPossible)-1)
-    return wordPossible[indexForWordChoice]
-
-testAnswer = []
-for row in testLpd:
-    if row == '\n':
-        testAnswer.append('\n')
-    else:
-        testAnswer.append(row.split('\t')[1])
-
-testAnswerSen = np.array(common.partDataToSentences2(testAnswer))
-
+# Test baseLine random model
 start = time.time()
 print "start"
 results = []
@@ -42,23 +28,25 @@ for sen in testSens:
     newSen = []
     for word in sen:
         if len(word)>9:
-        perms = unique([''.join(p) for p in permutations(word)])
-        poosWords = []
-        if len(perms) > 1:
-            for per in perms:
-                if per in vocDict and per[0]==word[0] and per[-1]==word[-1]:                    
-                    poosWords.append(per)
-        if len(poosWords)>0:
-            newSen.append(randomWord(poosWords))
-        else:
-            newSen.append(word)
+            perms = unique([''.join(p) for p in permutations(word)])
+            poosWords = []
+            if len(perms) > 1:
+                for per in perms:
+                    if per in vocDict and per[0]==word[0] and per[-1]==word[-1]:
+                        poosWords.append(per)
+            if len(poosWords)>0:
+                newSen.append(randomWord(poosWords))
+            else:
+                newSen.append(word)
     results.append(newSen)
 print "part2",time.time() - start
 
-equals = [results[i] == testAnswerSen[i] for i in xrange(len(testAnswerSen))]
+# Check result, I check if all the words in the sentence are the same for the expected result.
+equals = [results[i] == answerSens[i] for i in xrange(len(answerSens))]
 
-x = nltk.FreqDist(equals)
-print x
+FinalEquals = nltk.FreqDist(equals)
+print FinalEquals
+print FinalEquals[True]/FinalEquals[False]
 
 
 
