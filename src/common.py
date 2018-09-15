@@ -91,7 +91,8 @@ def filterOtherTok(tok):
                 ""]
     return tok in switcher
 
-def filter(tok):
+# Replacing anything taht is not a letter
+def switchtSpecialSymobols(tok):
     try:
         val = int(tok)
         return "yyNUMBER"

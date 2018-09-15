@@ -4,8 +4,8 @@ import common
 import nltk
 import time
 
-path = "./train/"
-lib = os.listdir(path)
+pathForTrainFiles = "./train/"
+lib = os.listdir(pathForTrainFiles)
 n=2
 
 bigram = []
@@ -14,7 +14,7 @@ for i,trainFile in enumerate(lib):
     start = time.time()
     print i
 
-    array = common.openFile(path + trainFile)
+    array = common.openFile(pathForTrainFiles + trainFile)
     array = np.array(array)
     array = np.split(array,np.where(array == '\n')[0])
     array = [np.delete(arr,np.where(arr=='\n')[0]) for arr in array]

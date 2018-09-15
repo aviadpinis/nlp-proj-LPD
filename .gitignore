@@ -36,3 +36,5 @@ ngram\.lex
 40000-49999\.train
 
 src/bigramModel\.gram
+
+textTrain\.zip
