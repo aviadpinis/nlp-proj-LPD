@@ -3,11 +3,18 @@
 
 import os
 import numpy as np
+import zipfile
 
 # Const
 PATH_VOCABULARY = "./vocabulary.lex"
 PATH_SENTENCES_WITH_LPD = "./dataWithLPD.gold"
+PATH_BIGRAM_MODEL_ZIP= "./src/bigramModel.zip"
+PATH_BIGRAM_MODEL_FILE= "bigramModel.gram"
 
+
+def getBigramModel():
+    model = openFileFromZip(PATH_BIGRAM_MODEL_ZIP,PATH_BIGRAM_MODEL_FILE)
+    return dict([row.split('\t') for row in model])
 
 # vocabulary for check if word is exists
 def getVocabulary():
@@ -27,7 +34,7 @@ def getTestAndAnswerSentences():
             testAnswer.append('\n')
         else:
             testAnswer.append(row.split('\t')[1])
-    testAnswerSen = np.array(common.partDataToSentences(testAnswer))
+    testAnswerSen = np.array(partDataToSentences(testAnswer))
     return testSens,testAnswerSen
 
 def removeSpace(data):
@@ -40,38 +47,26 @@ def openFile(name):
     with open(name, "r") as f:
         return removeSpace([line for line in f])
 
+def openFileFromZip(zipFile,fileName):
+    with zipfile.ZipFile(zipFile) as z:
+        with z.open(fileName, "r") as f:
+            return removeSpace([line for line in f])
+
 def partDataToSentences(data):
     array = np.array(data)
     array = np.split(array,np.where(array == '\n')[0])
     return [np.delete(arr,np.where(arr=='\n')[0]) for arr in array]
 
-def filterAlfaBeta(tav):
-    switcher = {
-        'a': 'א',
-        'b': 'ב',
-        'g': 'ג',
-        'd': 'ד',
-        'h': 'ה',
-        'w': 'ו',
-        'z': 'ז',
-        'x': 'ח',
-        'v': 'ט',
-        'i': 'י',
-        'k': 'כ',
-        'l': 'ל',
-        'm': 'מ',
-        'n': 'נ',
-        's': 'ס',
-        'y': 'ע',
-        'p': 'פ',
-        'c': 'צ',
-        'q': 'ק',
-        'r': 'ר',
-        'e': 'ש',
-        't': 'ת',
-    }
-    func = switcher.get(tav)
-    return func != None
+# Unknown word smoothing
+def smoodUnkFunc(vocDict, limitForSmood):
+    keys = vocDict.keys()
+    keyForSmooed = [key for key in keys if int(vocDict[key])<limitForSmood]
+
+    for key in keyForSmooed:
+        del vocDict[key]
+
+    vocDict['unk'] = limitForSmood
+    return vocDict
 
 def filterOtherTok(tok):
     switcher = ["yyNUMBER",
@@ -90,121 +85,3 @@ def filterOtherTok(tok):
                 'yyELSE',
                 ""]
     return tok in switcher
-
-# Replacing anything taht is not a letter
-def switchtSpecialSymobols(tok):
-    try:
-        val = int(tok)
-        return "yyNUMBER"
-    except ValueError:
-        if tok == '%':
-            return 'o'
-        elif tok == '"':
-            return 'yyQUOT'
-        elif tok == ',':
-            return 'yyCM'
-        elif tok == ':':
-            return 'yyCLN'
-        elif tok == '(':
-            return 'yyLRB'
-        elif tok == '.':
-            return 'yyDOT'
-        elif tok == '-':
-            return 'yyDASH'
-        elif tok == ')':
-            return 'yyRRB'
-        elif tok == '!':
-            return 'yyExcl'
-        elif tok == '?':
-            return 'yyQM'
-        elif tok == ';':
-            return 'yySCLN'
-        elif tok == '...':
-            return 'yyELPS'
-        elif tok == '\n':
-            return ""
-        else:
-            return tok
-
-def switchtavToSymbol(tav):
-    switcher = {
-        'o': '%',
-        'yyQUOT':'"',
-        'yyCM':',',
-        'yyCLN':':',
-        'yyLRB':'(',
-        'yyRRB':')',
-        'yyDOT':'.',
-        'yyDASH':'-',
-        'yyExcl':'!',
-        'yyQM':'?',
-        'yySCLN':';',
-        'yyELPS':'...'
-    }
-    return switcher.get(tav)
-
-def switchEngHeb(tav):
-    switcher = {
-        'a': 'א',
-        'b': 'ב',
-        'g': 'ג',
-        'd': 'ד',
-        'h': 'ה',
-        'w': 'ו',
-        'z': 'ז',
-        'x': 'ח',
-        'v': 'ט',
-        'i': 'י',
-        'k': 'כ',
-        'l': 'ל',
-        'm': 'מ',
-        'n': 'נ',
-        's': 'ס',
-        'y': 'ע',
-        'p': 'פ',
-        'c': 'צ',
-        'q': 'ק',
-        'r': 'ר',
-        'e': 'ש',
-        't': 'ת',
-        'o': '%',
-        'yyQUOT':'"',
-        'yyCM':',',
-        'yyCLN':':',
-        'yyLRB':'(',
-        'yyRRB':')',
-        'yyDOT':'.',
-        'yyDASH':'-',
-        'yyExcl':'!',
-        'yyQM':'?',
-        'yySCLN':';',
-        'yyELPS':'...'
-    }
-    return switcher.get(tav)
-
-def switchHebToEng(tav):
-    switcher = {
-        'א':'a',
-        'ב': 'b',
-        'ג':'g',
-        'ד':'d',
-        'ה':'h',
-        'ו':'w',
-        'ז':'z',
-        'ח':'x',
-        'ט':'v',
-        'י':'i',
-        'כ':'k',
-        'ל':'l',
-        'מ':'m',
-        'נ':'n',
-        'ס':'s',
-        'ע':'y',
-        'פ':'p',
-        'צ':'c',
-        'ק':'q',
-        'ר':'r',
-        'ש':'e',
-        'ת':'t',
-    }
-    return switcher.get(tav)

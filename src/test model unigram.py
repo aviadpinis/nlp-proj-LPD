@@ -11,16 +11,6 @@ from itertools import permutations
 vocDict = common.getVocabulary()
 testSens, answerSens = common.getTestAndAnswerSentences()
 
-# Unknown word smoothing
-def smoodUnkFunc(vocDict, limitForSmood):
-    keys = vocDict.keys()
-    keyForSmooed = [key for key in keys if int(vocDict[key])<limitForSmood]
-
-    for key in keyForSmooed:
-        del vocDict[key]
-
-    vocDict['unk'] = limitForSmood
-
 # Return all possible letter combinations for a word
 def perWord(word):
     if len(word) > 3 and len(word) < 9 and not common.filterOtherTok(word):
@@ -36,7 +26,7 @@ def calcCountWithSmoodUNK(word):
         return int(vocDict['UNK'])
 
 # Smood dictionary
-vocDict = smoodUnkFunc(vocDict,1)
+vocDict = common.smoodUnkFunc(vocDict,1)
 
 # Run for all sentences in test
 # For each sentence, i check for all word if you have more possible letter combinations

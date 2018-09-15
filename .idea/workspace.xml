@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a212d12d-7aac-4f4e-a263-5cb87ae26146" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test model unigram.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/replaceHeb2Eng.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test model bigram.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/baseline.py" afterPath="$PROJECT_DIR$/src/baseline.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common.py" afterPath="$PROJECT_DIR$/src/common.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test model unigram.py" afterPath="$PROJECT_DIR$/src/test model unigram.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,9 +18,137 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DockManager">
+    <window id="3">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="common.py" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/common.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="1518">
+                    <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+                    <folding>
+                      <element signature="e#18#27#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="replaceHeb2Eng.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/replaceHeb2Eng.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="264">
+                    <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+                    <folding>
+                      <element signature="e#96#880#0" expanded="false" />
+                      <element signature="e#909#1605#0" expanded="false" />
+                      <element signature="e#1636#2434#0" expanded="false" />
+                      <element signature="e#2468#2585#0" expanded="false" />
+                      <element signature="e#2619#2946#0" expanded="false" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <splitter split-orientation="horizontal" split-proportion="0.5">
+            <split-first>
+              <leaf>
+                <file leaf-file-name="test+model.py" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/src/test+model.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="528">
+                        <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+                        <folding />
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-first>
+            <split-second>
+              <leaf>
+                <file leaf-file-name="test model unigram.py" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/src/test model unigram.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="892">
+                        <caret line="60" column="42" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="60" selection-end-column="42" />
+                        <folding>
+                          <element signature="e#17#30#0" expanded="true" />
+                        </folding>
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-second>
+          </splitter>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="test model bigram.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test model bigram.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="280" column="10" lean-forward="true" selection-start-line="280" selection-start-column="10" selection-end-line="280" selection-end-column="10" />
+              <folding>
+                <element signature="e#18#36#0" expanded="true" />
+                <element signature="e#444#612#0" expanded="false" />
+                <element signature="e#716#1035#0" expanded="false" />
+                <element signature="e#1183#1328#0" expanded="false" />
+                <element signature="e#1330#1348#0" expanded="false" />
+                <element signature="e#1607#2686#0" expanded="false" />
+                <element signature="e#1747#2668#0" expanded="false" />
+                <element signature="e#1815#2594#0" expanded="false" />
+                <element signature="e#1876#1992#0" expanded="false" />
+                <element signature="e#2231#2278#0" expanded="false" />
+                <element signature="e#2331#2411#0" expanded="false" />
+                <element signature="e#2471#2551#0" expanded="false" />
+                <element signature="e#2621#2668#0" expanded="false" />
+                <element signature="e#2715#3097#0" expanded="false" />
+                <element signature="e#2761#2809#0" expanded="false" />
+                <element signature="e#3099#3111#0" expanded="false" />
+                <element signature="e#3168#3458#0" expanded="false" />
+                <element signature="e#3560#3776#0" expanded="false" />
+                <element signature="e#3865#4037#0" expanded="false" />
+                <element signature="e#4181#4426#0" expanded="false" />
+                <element signature="e#4224#4426#0" expanded="false" />
+                <element signature="e#4456#4510#0" expanded="false" />
+                <element signature="e#4578#6276#0" expanded="false" />
+                <element signature="e#4914#6082#0" expanded="false" />
+                <element signature="e#5033#5253#0" expanded="false" />
+                <element signature="e#5345#5534#0" expanded="false" />
+                <element signature="e#5626#5808#0" expanded="false" />
+                <element signature="e#5900#6082#0" expanded="false" />
+                <element signature="e#6112#6166#0" expanded="false" />
+                <element signature="e#6185#6274#0" expanded="false" />
+                <element signature="e#6276#6351#0" expanded="false" />
+                <element signature="e#6404#6484#0" expanded="false" />
+                <element signature="e#6517#7245#0" expanded="false" />
+                <element signature="e#6596#7220#0" expanded="false" />
+                <element signature="e#6698#7147#0" expanded="false" />
+                <element signature="e#6953#7147#0" expanded="false" />
+                <element signature="e#7278#7500#0" expanded="false" />
+                <element signature="e#7378#7422#0" expanded="false" />
+                <element signature="e#7502#7529#0" expanded="false" />
+                <marker date="1537040322430" expanded="false" signature="4092:4510" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -31,10 +161,12 @@
     <findStrings>
       <find>path</find>
       <find>data</find>
-      <find>randint</find>
       <find>pathVocabulary</find>
       <find>is</find>
       <find>smoodUnkFunc</find>
+      <find>filterAlfaBeta</find>
+      <find>filterOtherTok</find>
+      <find>randint</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -54,19 +186,22 @@
         <option value="$PROJECT_DIR$/src/create bigram model.py" />
         <option value="$PROJECT_DIR$/src/create one bigram.py" />
         <option value="$PROJECT_DIR$/src/try2.py" />
-        <option value="$PROJECT_DIR$/src/common.py" />
         <option value="$PROJECT_DIR$/src/create vocabulary.py" />
         <option value="$PROJECT_DIR$/src/create lpd sentence test.py" />
         <option value="$PROJECT_DIR$/src/prepareTheCorpus.py" />
         <option value="$PROJECT_DIR$/src/baseline.py" />
         <option value="$PROJECT_DIR$/src/test model unigram.py" />
+        <option value="$PROJECT_DIR$/src/common.py" />
+        <option value="$PROJECT_DIR$/src/raplceHeb2Eng.py" />
+        <option value="$PROJECT_DIR$/src/test model bigram.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -124,41 +259,7 @@
       <recent name="C:\Users\aviad\Documents\לימודים\מבוא לעיבוד שפה\proj\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.prepareTheCorpus">
-    <configuration default="false" name="createTrigram" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="proj" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/createTrigram.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test+model" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="proj" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test+model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.test model bigram">
     <configuration default="false" name="create one bigram" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -206,6 +307,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="proj" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/prepareTheCorpus.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="raplceHeb2Eng" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="proj" />
+      <option name="SCRIPT_NAME" value="C:\Users\aviad\Documents\לימודים\מבוא לעיבוד שפה\proj\src\replaceHeb2Eng.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test model bigram" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="proj" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test model bigram.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -345,19 +480,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.createTrigram" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test+model" />
-      <item index="2" class="java.lang.String" itemvalue="Python.create one bigram" />
-      <item index="3" class="java.lang.String" itemvalue="Python.try2" />
-      <item index="4" class="java.lang.String" itemvalue="Python.prepareTheCorpus" />
+      <item index="0" class="java.lang.String" itemvalue="Python.create one bigram" />
+      <item index="1" class="java.lang.String" itemvalue="Python.try2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.prepareTheCorpus" />
+      <item index="3" class="java.lang.String" itemvalue="Python.raplceHeb2Eng" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test model bigram" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.prepareTheCorpus" />
-        <item index="1" class="java.lang.String" itemvalue="Python.try2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.create one bigram" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test+model" />
-        <item index="4" class="java.lang.String" itemvalue="Python.createTrigram" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test model bigram" />
+        <item index="1" class="java.lang.String" itemvalue="Python.raplceHeb2Eng" />
+        <item index="2" class="java.lang.String" itemvalue="Python.prepareTheCorpus" />
+        <item index="3" class="java.lang.String" itemvalue="Python.try2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.create one bigram" />
       </list>
     </recent_temporary>
   </component>
@@ -384,16 +519,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1936" height="1038" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986765" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875144" sideWeight="0.49602965" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5018528" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.49814716" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.49814913" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33218786" sideWeight="0.4362771" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33182332" sideWeight="0.4362771" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875144" sideWeight="0.49602965" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -410,19 +545,19 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5018528" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5018528" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.49814913" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33295584" sideWeight="0.4362771" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33218786" sideWeight="0.4362771" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875144" sideWeight="0.49602965" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986765" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.49814716" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.49814716" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39518902" sideWeight="0.7755426" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39518902" sideWeight="0.7755426" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -437,7 +572,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -451,27 +586,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/try2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create+bigram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35090">
-          <caret line="1595" column="0" lean-forward="false" selection-start-line="1595" selection-start-column="0" selection-end-line="1595" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/create one bigram.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -735,21 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="94" column="26" lean-forward="false" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="26" />
-          <folding>
-            <element signature="e#18#27#0" expanded="true" />
-            <element signature="e#1292#1759#0" expanded="false" />
-            <element signature="e#1790#2185#0" expanded="false" />
-            <element signature="e#3084#3384#0" expanded="false" />
-            <element signature="e#3413#4109#0" expanded="false" />
-            <element signature="e#4140#4562#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/create bigram model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="814">
@@ -760,22 +859,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/work+on+informaion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-506">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#18#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/create vocabulary.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
           <folding>
-            <element signature="e#18#27#0" expanded="true" />
+            <element signature="e#18#27#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -785,7 +874,7 @@
         <state relative-caret-position="330">
           <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
           <folding>
-            <element signature="e#18#36#0" expanded="true" />
+            <element signature="e#18#36#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -800,14 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test+model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/create one bigram.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -816,22 +897,118 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/baseline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#158#171#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test+model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test model unigram.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        <state relative-caret-position="892">
+          <caret line="60" column="42" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="60" selection-end-column="42" />
           <folding>
             <element signature="e#17#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/baseline.py">
+    <entry file="file://$PROJECT_DIR$/src/work+on+informaion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state relative-caret-position="184">
+          <caret line="83" column="15" lean-forward="false" selection-start-line="83" selection-start-column="15" selection-end-line="83" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create lpd test.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
-            <element signature="e#158#171#0" expanded="true" />
+            <element signature="e#18#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/replaceHeb2Eng.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+          <folding>
+            <element signature="e#96#880#0" expanded="false" />
+            <element signature="e#909#1605#0" expanded="false" />
+            <element signature="e#1636#2434#0" expanded="false" />
+            <element signature="e#2468#2585#0" expanded="false" />
+            <element signature="e#2619#2946#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test model bigram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="280" column="10" lean-forward="true" selection-start-line="280" selection-start-column="10" selection-end-line="280" selection-end-column="10" />
+          <folding>
+            <element signature="e#18#36#0" expanded="true" />
+            <element signature="e#444#612#0" expanded="false" />
+            <element signature="e#716#1035#0" expanded="false" />
+            <element signature="e#1183#1328#0" expanded="false" />
+            <element signature="e#1330#1348#0" expanded="false" />
+            <element signature="e#1607#2686#0" expanded="false" />
+            <element signature="e#1747#2668#0" expanded="false" />
+            <element signature="e#1815#2594#0" expanded="false" />
+            <element signature="e#1876#1992#0" expanded="false" />
+            <element signature="e#2231#2278#0" expanded="false" />
+            <element signature="e#2331#2411#0" expanded="false" />
+            <element signature="e#2471#2551#0" expanded="false" />
+            <element signature="e#2621#2668#0" expanded="false" />
+            <element signature="e#2715#3097#0" expanded="false" />
+            <element signature="e#2761#2809#0" expanded="false" />
+            <element signature="e#3099#3111#0" expanded="false" />
+            <element signature="e#3168#3458#0" expanded="false" />
+            <element signature="e#3560#3776#0" expanded="false" />
+            <element signature="e#3865#4037#0" expanded="false" />
+            <element signature="e#4181#4426#0" expanded="false" />
+            <element signature="e#4224#4426#0" expanded="false" />
+            <element signature="e#4456#4510#0" expanded="false" />
+            <element signature="e#4578#6276#0" expanded="false" />
+            <element signature="e#4914#6082#0" expanded="false" />
+            <element signature="e#5033#5253#0" expanded="false" />
+            <element signature="e#5345#5534#0" expanded="false" />
+            <element signature="e#5626#5808#0" expanded="false" />
+            <element signature="e#5900#6082#0" expanded="false" />
+            <element signature="e#6112#6166#0" expanded="false" />
+            <element signature="e#6185#6274#0" expanded="false" />
+            <element signature="e#6276#6351#0" expanded="false" />
+            <element signature="e#6404#6484#0" expanded="false" />
+            <element signature="e#6517#7245#0" expanded="false" />
+            <element signature="e#6596#7220#0" expanded="false" />
+            <element signature="e#6698#7147#0" expanded="false" />
+            <element signature="e#6953#7147#0" expanded="false" />
+            <element signature="e#7278#7500#0" expanded="false" />
+            <element signature="e#7378#7422#0" expanded="false" />
+            <element signature="e#7502#7529#0" expanded="false" />
+            <marker date="1537040322430" expanded="false" signature="4092:4510" ph="..." />
           </folding>
         </state>
       </provider>
