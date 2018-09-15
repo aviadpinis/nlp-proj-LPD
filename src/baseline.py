@@ -7,7 +7,6 @@
 import common
 from itertools import permutations
 import time
-import numpy as np
 from numpy import unique
 import random
 import nltk
