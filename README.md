@@ -4,7 +4,7 @@
 The goal of this project was to identify LPD possible in sentences for hebrew
 
 for example:
-"היה לי לוחם ממש טוב" <=> "היה לי חלום ממש טוב"
+"היה לי לוחם ממש טוב" <=> "היה לי חלום ממש טוב"'/n'
 "רוצה לבוא לאכול גדילה" <=> "רוצה לבוא לאכול גלידה"
 
 In this project has several parts:
