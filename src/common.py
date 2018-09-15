@@ -8,7 +8,7 @@ import zipfile
 # Const
 PATH_VOCABULARY = "./vocabulary.lex"
 PATH_SENTENCES_WITH_LPD = "./dataWithLPD.gold"
-PATH_BIGRAM_MODEL_ZIP= "./src/bigramModel.zip"
+PATH_BIGRAM_MODEL_ZIP= "./bigramModel.zip"
 PATH_BIGRAM_MODEL_FILE= "bigramModel.gram"
 
 

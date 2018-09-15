@@ -35,4 +35,14 @@ with open("./bigram/bigram"+str(i)+".lex", "w") as text_file:
     for key in sorted(bigram.keys()):
         text_file.write(str(key) + '\t' + str(bigram[key]) + '\n')
 
-print "part3",time.time() - start
+path = "../bigram/"
+lib = os.listdir(path)
+
+bigram = nltk.FreqDist()
+for i,bigramfile in enumerate(lib):
+    array = common.openFile(path + bigramfile)
+    bigram += nltk.FreqDist(array)
+
+with open("../bigramModel.gram", "w") as text_file:
+    for key in sorted(bigram.keys()):
+        text_file.write(str(key) + '\t' + str(bigram[key]) + '\n')
